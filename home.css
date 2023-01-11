@@ -1,0 +1,140 @@
+@charset "utf-8";
+@import url('https: // fonts. googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+
+* {
+margin: 0; padding: 0; 
+box-sizing: border-box;
+font-family: 'Noto Sans. KR', sans-serif;
+}
+    
+    /*로고부분 공백*/
+    h1 {
+    margin:40px 0;
+    color: #2f4f4f;
+    }
+
+html, body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    background: url("fukuoka.jpg") no-repeat center;
+}
+
+.skills-bar{
+    width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+}
+
+.skills-bar .bar{
+    margin: 20px 0;
+}
+
+.skills-bar .bar:first-child{
+    margin-top: 0px;
+}
+
+.skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+
+.skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #2f4f4f;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.progress-line.chap1 span{
+    width: 88%;
+}
+.progress-line.chap2 span{
+    width: 60%;
+}
+.progress-line.chap3 span{
+    width: 75%;
+}
+.progress-line.chap4 span{
+    width: 80%;
+}
+
+.bar .progress-line span::before{
+    position: absolute;
+    content: "";
+    right: 0;
+    top: -10px;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #1b2e2e;
+}
+
+.bar .progress-line span::after{
+    position: absolute;
+    right: 0;
+    top: -26px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    background: #1b2e2e;
+    padding: 1px 8px;
+    border-radius: 3px;
+}
+
+.progress-line.chap1 span::after{
+    content: "88%";
+}
+.progress-line.chap2 span::after{
+    content: "60%";
+}
+.progress-line.chap3 span::after{
+    content: "75%";
+}
+.progress-line.chap4 span::after{
+    content: "80%";
+}
+
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    background: #f0f0f0;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                      0px 1px rgba(255,255,255,0.8);
+}
+
+
+/*그룹 이미지*/
+
+.subject{
+    margin: 0.5rem;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.subject> h2,
+.subject> p {
+    margin: 0.2rem;
+    font-size: 1rem;
+}
+
+/*하단 footer*/
+
+.footer {
+padding: 20px 0;
+border-top: 1px solid #888888;
+font-size:0.8em;
+color: #c0c0c0;
+}
